@@ -1,0 +1,138 @@
+[
+    {
+        "field": "Invoice Number",
+        "value": "INV-2026-001",
+        "evidence": "Invoice Number: INV-2026-001",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Invoice Number' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Date",
+        "value": "30 June 2026",
+        "evidence": "Date: 30 June 2026",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Date' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Customer",
+        "value": "John Doe",
+        "evidence": "Customer: John Doe",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Customer' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Company",
+        "value": "ABC Technologies Pvt Ltd",
+        "evidence": "Company: ABC Technologies Pvt Ltd",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Company' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Email",
+        "value": "john.doe@example.com",
+        "evidence": "Email: john.doe@example.com",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Email' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Phone",
+        "value": "+91 9876543210",
+        "evidence": "Phone: +91 9876543210",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Phone' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Item 1 Description",
+        "value": "AI Consulting Services",
+        "evidence": "1. AI Consulting Services - $850.00",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Item 1 Description' value is accurately extracted from the first item line in the document, matching the evidence."
+    },
+    {
+        "field": "Item 1 Amount",
+        "value": "$850.00",
+        "evidence": "1. AI Consulting Services - $850.00",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Item 1 Amount' value is accurately extracted from the first item line in the document, matching the evidence."
+    },
+    {
+        "field": "Item 2 Description",
+        "value": "Document Processing License",
+        "evidence": "2. Document Processing License - $400.00",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Item 2 Description' value is accurately extracted from the second item line in the document, matching the evidence."
+    },
+    {
+        "field": "Item 2 Amount",
+        "value": "$400.00",
+        "evidence": "2. Document Processing License - $400.00",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Item 2 Amount' value is accurately extracted from the second item line in the document, matching the evidence."
+    },
+    {
+        "field": "Subtotal",
+        "value": "$1,250.00",
+        "evidence": "Subtotal: $1,250.00",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Subtotal' value exactly matches the provided evidence and the content in the original document. It is also arithmetically correct ($850.00 + $400.00 = $1,250.00)."
+    },
+    {
+        "field": "Tax (10%)",
+        "value": "$125.00",
+        "evidence": "Tax (10%): $125.00",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Tax (10%)' value exactly matches the provided evidence and the content in the original document. It is also arithmetically correct (10% of $1,250.00 = $125.00)."
+    },
+    {
+        "field": "Total Amount",
+        "value": "$1,375.00",
+        "evidence": "Total Amount: $1,375.00",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Total Amount' value exactly matches the provided evidence and the content in the original document. It is also arithmetically correct ($1,250.00 + $125.00 = $1,375.00)."
+    },
+    {
+        "field": "Payment Status",
+        "value": "Paid",
+        "evidence": "Payment Status: Paid",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Payment Status' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Payment Method",
+        "value": "Bank Transfer",
+        "evidence": "Payment Method: Bank Transfer",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Payment Method' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Due Date",
+        "value": "07 July 2026",
+        "evidence": "Due Date: 07 July 2026",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Due Date' value exactly matches the provided evidence and the content in the original document."
+    },
+    {
+        "field": "Notes",
+        "value": "Thank you for your business. This invoice confirms payment has been received in full.",
+        "evidence": "Notes: Thank you for your business. This invoice confirms payment has been received in full.",
+        "verified": true,
+        "confidence": "high",
+        "reason": "The 'Notes' value exactly matches the provided evidence and the content in the original document."
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "field": "Invoice Number",
+        "value": "INV-2026-001",
+        "evidence": "Invoice Number: INV-2026-001"
+    },
+    {
+        "field": "Date",
+        "value": "30 June 2026",
+        "evidence": "Date: 30 June 2026"
+    },
+    {
+        "field": "Customer",
+        "value": "John Doe",
+        "evidence": "Customer: John Doe"
+    },
+    {
+        "field": "Company",
+        "value": "ABC Technologies Pvt Ltd",
+        "evidence": "Company: ABC Technologies Pvt Ltd"
+    },
+    {
+        "field": "Email",
+        "value": "john.doe@example.com",
+        "evidence": "Email: john.doe@example.com"
+    },
+    {
+        "field": "Phone",
+        "value": "+91 9876543210",
+        "evidence": "Phone: +91 9876543210"
+    },
+    {
+        "field": "Item 1 Description",
+        "value": "AI Consulting Services",
+        "evidence": "1. AI Consulting Services - $850.00"
+    },
+    {
+        "field": "Item 1 Amount",
+        "value": "$850.00",
+        "evidence": "1. AI Consulting Services - $850.00"
+    },
+    {
+        "field": "Item 2 Description",
+        "value": "Document Processing License",
+        "evidence": "2. Document Processing License - $400.00"
+    },
+    {
+        "field": "Item 2 Amount",
+        "value": "$400.00",
+        "evidence": "2. Document Processing License - $400.00"
+    },
+    {
+        "field": "Subtotal",
+        "value": "$1,250.00",
+        "evidence": "Subtotal: $1,250.00"
+    },
+    {
+        "field": "Tax (10%)",
+        "value": "$125.00",
+        "evidence": "Tax (10%): $125.00"
+    },
+    {
+        "field": "Total Amount",
+        "value": "$1,375.00",
+        "evidence": "Total Amount: $1,375.00"
+    },
+    {
+        "field": "Payment Status",
+        "value": "Paid",
+        "evidence": "Payment Status: Paid"
+    },
+    {
+        "field": "Payment Method",
+        "value": "Bank Transfer",
+        "evidence": "Payment Method: Bank Transfer"
+    },
+    {
+        "field": "Due Date",
+        "value": "07 July 2026",
+        "evidence": "Due Date: 07 July 2026"
+    },
+    {
+        "field": "Notes",
+        "value": "Thank you for your business. This invoice confirms payment has been received in full.",
+        "evidence": "Notes: Thank you for your business. This invoice confirms payment has been received in full."
+    }
+]

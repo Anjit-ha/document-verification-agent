@@ -1,0 +1,62 @@
+[
+    {
+        "field": "Invoice Number",
+        "value": "INV-2026-001"
+    },
+    {
+        "field": "Date",
+        "value": "30 June 2026"
+    },
+    {
+        "field": "Customer",
+        "value": "John Doe"
+    },
+    {
+        "field": "Company",
+        "value": "ABC Technologies Pvt Ltd"
+    },
+    {
+        "field": "Email",
+        "value": "john.doe@example.com"
+    },
+    {
+        "field": "Phone",
+        "value": "+91 9876543210"
+    },
+    {
+        "field": "Item 1",
+        "value": "AI Consulting Services - $850.00"
+    },
+    {
+        "field": "Item 2",
+        "value": "Document Processing License - $400.00"
+    },
+    {
+        "field": "Subtotal",
+        "value": "$1,250.00"
+    },
+    {
+        "field": "Tax (10%)",
+        "value": "$125.00"
+    },
+    {
+        "field": "Total Amount",
+        "value": "$1,375.00"
+    },
+    {
+        "field": "Payment Status",
+        "value": "Paid"
+    },
+    {
+        "field": "Payment Method",
+        "value": "Bank Transfer"
+    },
+    {
+        "field": "Due Date",
+        "value": "07 July 2026"
+    },
+    {
+        "field": "Notes",
+        "value": "Thank you for your business. This invoice confirms payment has been received in full."
+    }
+]
