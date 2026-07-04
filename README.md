@@ -1,21 +1,38 @@
-# Document Verification Agent Harness
+# Deep Extract-Inspired Document Verification Agent Harness
 
-A simplified implementation of the **Reducto Agent Harness** architecture for document verification using **Python**, **Gemini**, and **Rust**.
+A multi-agent document verification framework inspired by the concepts of Deep Extract agent harness architectures. The system automatically extracts structured information from PDF documents, retrieves supporting evidence, verifies extracted fields, assigns confidence scores, and iteratively refines failed claims until a quality threshold is reached.
 
-This project extracts structured information from PDF documents, retrieves supporting evidence, verifies extracted claims, assigns confidence scores, and generates a final verification report through a multi-agent workflow.
+The framework is designed to work with multiple document types such as invoices, resumes, bank statements, contracts, utility bills, medical reports, passports, research papers, and other structured or semi-structured PDF documents.
 
 ---
 
-# Architecture
+## Features
 
-```
+- Multi-agent architecture
+- Planner-driven extraction workflow
+- Generic document support
+- Evidence retrieval for every extracted field
+- Automated field verification
+- Confidence scoring with Rust acceleration
+- Iterative refinement of failed claims
+- JSON-based structured outputs
+- Modular and extensible design
+
+---
+
+## Architecture
+
+```text
                 PDF Document
                      │
                      ▼
               PDF Parser
                      │
                      ▼
-           Extracted Document Text
+              Planner Agent
+                     │
+                     ▼
+            Extraction Plan
                      │
                      ▼
             Extractor Agent
@@ -24,67 +41,58 @@ This project extracts structured information from PDF documents, retrieves suppo
             Evidence Agent
                      │
                      ▼
-           Verification Agent
+            Verifier Agent
                      │
                      ▼
-          Confidence Scoring
+          Confidence Agent
+             (Rust Assisted)
                      │
                      ▼
-              Judge Agent
+           Quality Assessment
+             │             │
+             │             ▼
+             │      Feedback Agent
+             │             │
+             │             ▼
+             │    Re-Extraction Loop
+             │
+             ▼
+            Judge Agent
                      │
                      ▼
-        Final Verification Report
+              Final Verification Report
 ```
 
 ---
 
-# Features
-
-- Multi-Agent AI Pipeline
-- PDF Text Extraction
-- Evidence-based Verification
-- Confidence Scoring
-- Explainable Results
-- Modular Architecture
-- JSON Outputs
-- Rust Utility Module (Text Processing)
-
----
-
-# Project Structure
+## Project Structure
 
 ```
 document-verification-agent/
-
 │
 ├── agents/
 │   ├── base_agent.py
+│   ├── planner.py
 │   ├── extractor.py
 │   ├── evidence.py
 │   ├── verifier.py
 │   ├── confidence.py
+│   ├── feedback.py
 │   ├── judge.py
 │   └── orchestrator.py
-│
-├── document_parser/
-│   └── pdf_parser.py
-│
-├── models/
 │
 ├── prompts/
 │
 ├── rust_utils/
 │   ├── Cargo.toml
-│   ├── src/
-│   └── pyproject.toml
+│   └── src/
+│       └── lib.rs
+│
+├── document_parser/
 │
 ├── utils/
 │
-├── examples/
-│
 ├── output/
-│
-├── tests/
 │
 ├── config.py
 ├── main.py
@@ -94,106 +102,149 @@ document-verification-agent/
 
 ---
 
-# Agent Responsibilities
+## Agent Responsibilities
 
-## 1. Extractor Agent
+### Planner Agent
 
-Extracts structured claims from the document.
+- Understands document structure
+- Identifies document type
+- Creates an extraction plan
+- Divides documents into logical sections
 
-Example:
+---
 
-```json
-{
-    "field":"Invoice Number",
-    "value":"INV-2026-001"
-}
+### Extractor Agent
+
+- Extracts structured information
+- Follows the planner's extraction strategy
+- Supports refinement-based re-extraction
+
+---
+
+### Evidence Agent
+
+- Retrieves supporting evidence from the original document
+- Associates evidence with extracted claims
+
+---
+
+### Verifier Agent
+
+- Compares extracted values against document evidence
+- Determines whether each claim is verified
+- Provides verification reasoning
+
+---
+
+### Confidence Agent
+
+- Assigns confidence scores
+- Uses Rust-based similarity functions
+- Combines deterministic similarity with verification results
+
+---
+
+### Feedback Agent
+
+- Analyses failed verification results
+- Generates refinement instructions
+- Guides targeted re-extraction
+
+---
+
+### Judge Agent
+
+- Produces the final verification summary
+- Reports verification statistics
+- Generates the final quality assessment
+
+---
+
+## Rust Integration
+
+Rust is integrated through PyO3 and Maturin to accelerate deterministic operations.
+
+Current Rust utilities include:
+
+- Text normalization
+- Text hashing
+- Jaccard similarity
+- Exact matching
+- Contains matching
+- Duplicate line detection
+- Word counting
+
+These utilities are used to improve confidence estimation and document preprocessing.
+
+---
+
+## Iterative Verification Workflow
+
+```
+PDF
+ │
+ ▼
+Planner
+ │
+ ▼
+Extractor
+ │
+ ▼
+Evidence
+ │
+ ▼
+Verifier
+ │
+ ▼
+Confidence
+ │
+ ├──────── PASS ───────► Judge
+ │
+ └──────── FAIL
+            │
+            ▼
+       Feedback
+            │
+            ▼
+   Re-Extraction
+            │
+            └────────► Verify Again
 ```
 
----
-
-## 2. Evidence Agent
-
-Finds supporting text for every extracted claim directly from the original document.
-
-Example:
-
-```json
-{
-    "field":"Invoice Number",
-    "evidence":"Invoice Number : INV-2026-001"
-}
-```
+The workflow repeats until all claims satisfy the confidence threshold or the maximum refinement iterations are reached.
 
 ---
 
-## 3. Verification Agent
+## Installation
 
-Verifies whether each claim is supported by the retrieved evidence.
-
-Example:
-
-```json
-{
-    "verified":true,
-    "reason":"Exact match found."
-}
-```
-
----
-
-## 4. Confidence Agent
-
-Assigns a confidence score for each verified claim.
-
-Example:
-
-```json
-{
-    "confidence":0.99
-}
-```
-
----
-
-## 5. Judge Agent
-
-Produces the final verification report summarizing the verification results.
-
----
-
-# Installation
-
-## Clone Repository
+Clone the repository
 
 ```bash
 git clone <repository-url>
-
 cd document-verification-agent
 ```
 
----
-
-## Create Virtual Environment
-
-### Windows
+Create a virtual environment
 
 ```bash
 python -m venv .venv
+```
 
+Activate it
+
+Windows
+
+```bash
 .venv\Scripts\activate
 ```
 
-### Linux / macOS
+Linux
 
 ```bash
-python3 -m venv .venv
-
 source .venv/bin/activate
 ```
 
----
-
-## Install Dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -201,9 +252,9 @@ pip install -r requirements.txt
 
 ---
 
-## Configure API Key
+## Configure API
 
-Create a `.env` file.
+Create a `.env` file
 
 ```
 GEMINI_API_KEY=YOUR_API_KEY
@@ -211,120 +262,64 @@ GEMINI_API_KEY=YOUR_API_KEY
 
 ---
 
-# Running the Project
+## Build Rust Extension
 
-Example:
+```bash
+cd rust_utils
+maturin develop
+cd ..
+```
+
+---
+
+## Run
 
 ```bash
 python main.py examples/sample.pdf
 ```
 
-The pipeline will automatically
-
-- Parse the PDF
-- Extract claims
-- Retrieve evidence
-- Verify claims
-- Assign confidence scores
-- Generate the final report
-
 ---
 
-# Output
-
-The generated files are stored inside
-
-```
-output/
-```
-
-Files include:
-
-```
-output/
-
-extracted_claims.json
-
-evidence.json
-
-verified_claims.json
-
-confidence_scores.json
-
-report.json
-```
-
-Example Report
+## Example Output
 
 ```json
 {
-    "overall_status":"PASS",
-    "verified_count":17,
-    "failed_count":0
+    "overall_status": "PASSED",
+    "summary": "All extracted claims successfully verified.",
+    "verified_count": 18,
+    "failed_count": 0,
+    "quality_score": 1.0,
+    "recommendation": "No further refinement required."
 }
 ```
 
 ---
 
-# Rust Module
+## Technologies Used
 
-The project contains a Rust utility module implemented using **PyO3**.
-
-Implemented functions:
-
-- normalize_text()
-- hash_text()
-- jaccard_similarity()
-
-Build:
-
-```bash
-cd rust_utils
-
-maturin develop
-```
-
-> **Note:** Building the Rust extension on Windows requires Microsoft Visual Studio Build Tools with the **Desktop development with C++** workload.
-
----
-
-# Technologies Used
-
-- Python 3.10
+- Python
+- Rust
+- PyO3
+- Maturin
 - Google Gemini API
 - PyMuPDF
-- PyO3
-- Rust
 - JSON
+- Multi-Agent Architecture
 
 ---
 
-# Current Limitations
+## Future Improvements
 
-- Designed primarily for digital text-based PDFs.
-- Scanned documents require an OCR preprocessing step.
-- Rust utilities require a local Rust toolchain and Visual Studio Build Tools on Windows.
-
----
-
-# Future Improvements
-
-- OCR support for scanned documents.
-- Parallel execution of independent agents.
-- Retrieval-Augmented Generation (RAG) for external document validation.
-- Automatic retry and error recovery.
-- Web-based user interface.
+- Parallel execution of extraction tasks
+- Local LLM support
+- OCR integration
+- Multi-language document support
+- Advanced business-rule validation
+- Table-aware extraction
+- Layout-aware document understanding
 
 ---
 
-# Inspiration
+## Disclaimer
 
-This project is inspired by the **Reducto Deep Extract – Agent Harness for Document Verification** architecture.
-
-The implementation is a simplified educational version demonstrating how multiple specialized AI agents can collaborate to improve document extraction and verification.
-
----
-
-# Author
-
-Anjitha Sivakumar
+This project is an independent implementation inspired by publicly described concepts of iterative document extraction and verification. It is not affiliated with, endorsed by, or derived from any proprietary implementation.
