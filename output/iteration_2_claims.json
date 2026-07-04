@@ -1,0 +1,87 @@
+[
+    {
+        "section": "Invoice Details",
+        "field": "Invoice Number",
+        "value": "INV-2026-001"
+    },
+    {
+        "section": "Invoice Details",
+        "field": "Date",
+        "value": "30 June 2026"
+    },
+    {
+        "section": "Customer Information",
+        "field": "Customer",
+        "value": "John Doe"
+    },
+    {
+        "section": "Customer Information",
+        "field": "Company",
+        "value": "ABC Technologies Pvt Ltd"
+    },
+    {
+        "section": "Customer Information",
+        "field": "Email",
+        "value": "john.doe@example.com"
+    },
+    {
+        "section": "Customer Information",
+        "field": "Phone",
+        "value": "+91 9876543210"
+    },
+    {
+        "section": "Summary Totals",
+        "field": "Subtotal",
+        "value": "$1,250.00"
+    },
+    {
+        "section": "Summary Totals",
+        "field": "Tax",
+        "value": "$125.00"
+    },
+    {
+        "section": "Summary Totals",
+        "field": "Total Amount",
+        "value": "$1,375.00"
+    },
+    {
+        "section": "Items",
+        "field": "Item 1 Description",
+        "value": "AI Consulting Services"
+    },
+    {
+        "section": "Items",
+        "field": "Item 1 Amount",
+        "value": "$850.00"
+    },
+    {
+        "section": "Items",
+        "field": "Item 2 Description",
+        "value": "Document Processing License"
+    },
+    {
+        "section": "Items",
+        "field": "Item 2 Amount",
+        "value": "$400.00"
+    },
+    {
+        "section": "Payment and Due Details",
+        "field": "Payment Status",
+        "value": "Paid"
+    },
+    {
+        "section": "Payment and Due Details",
+        "field": "Payment Method",
+        "value": "Bank Transfer"
+    },
+    {
+        "section": "Payment and Due Details",
+        "field": "Due Date",
+        "value": "07 July 2026"
+    },
+    {
+        "section": "Notes",
+        "field": "Notes",
+        "value": "Thank you for your business. This invoice confirms payment has been received in full."
+    }
+]

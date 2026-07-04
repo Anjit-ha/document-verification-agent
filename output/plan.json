@@ -1,0 +1,41 @@
+{
+    "document_type": "Invoice",
+    "sections": [
+        {
+            "id": 1,
+            "name": "Invoice Details",
+            "description": "Contains core invoice identification information such as invoice number and date.",
+            "priority": 1
+        },
+        {
+            "id": 2,
+            "name": "Customer Information",
+            "description": "Details about the customer including their name, company, email, and phone number.",
+            "priority": 2
+        },
+        {
+            "id": 3,
+            "name": "Summary Totals",
+            "description": "Financial summary including subtotal, tax amount, and total amount due/paid.",
+            "priority": 3
+        },
+        {
+            "id": 4,
+            "name": "Items",
+            "description": "A repeated structure listing individual products or services, their descriptions, and amounts.",
+            "priority": 4
+        },
+        {
+            "id": 5,
+            "name": "Payment and Due Details",
+            "description": "Information regarding the payment status, payment method, and due date of the invoice.",
+            "priority": 5
+        },
+        {
+            "id": 6,
+            "name": "Notes",
+            "description": "Any additional notes or messages included on the invoice.",
+            "priority": 6
+        }
+    ]
+}

@@ -7,22 +7,52 @@ class VerifierAgent(BaseAgent):
 
     def __init__(self):
 
-        super().__init__("prompts/verifier.txt")
+        super().__init__(
+            "prompts/verifier.txt"
+        )
 
-    def run(self, document, claims):
+    def run(
+        self,
+        document,
+        evidence
+    ):
 
-        return self.ask(
+        if isinstance(evidence, list):
 
-            f"""
+            evidence = json.dumps(
+                evidence,
+                indent=4,
+                ensure_ascii=False
+            )
+
+        prompt = f"""
 
 DOCUMENT
 
 {document}
 
-CLAIMS
+========================
 
-{json.dumps(claims,indent=2)}
+EXTRACTED EVIDENCE
+
+{evidence}
+
+========================
+
+Verify every extracted field.
+
+For each field decide
+
+1. verified
+
+2. evidence
+
+3. reason
+
+Do NOT invent values.
+
+Return JSON only.
 
 """
 
-        )
+        return self.ask(prompt)

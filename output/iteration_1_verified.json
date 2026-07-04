@@ -1,0 +1,138 @@
+[
+    {
+        "section": "",
+        "field": "Invoice Number",
+        "value": "",
+        "verified": true,
+        "evidence": "Invoice Number: INV-2026-001",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Date",
+        "value": "",
+        "verified": true,
+        "evidence": "Date: 30 June 2026",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Customer",
+        "value": "",
+        "verified": true,
+        "evidence": "Customer: John Doe",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Company",
+        "value": "",
+        "verified": true,
+        "evidence": "Company: ABC Technologies Pvt Ltd",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Email",
+        "value": "",
+        "verified": true,
+        "evidence": "Email: john.doe@example.com",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Phone",
+        "value": "",
+        "verified": true,
+        "evidence": "Phone: +91 9876543210",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Subtotal",
+        "value": "",
+        "verified": true,
+        "evidence": "Subtotal: $1,250.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Tax",
+        "value": "",
+        "verified": true,
+        "evidence": "Tax (10%): $125.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Total Amount",
+        "value": "",
+        "verified": true,
+        "evidence": "Total Amount: $1,375.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Description",
+        "value": "",
+        "verified": true,
+        "evidence": "1. AI Consulting Services - $850.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Amount",
+        "value": "",
+        "verified": true,
+        "evidence": "1. AI Consulting Services - $850.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Description",
+        "value": "",
+        "verified": true,
+        "evidence": "2. Document Processing License - $400.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Amount",
+        "value": "",
+        "verified": true,
+        "evidence": "2. Document Processing License - $400.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Payment Status",
+        "value": "",
+        "verified": true,
+        "evidence": "Payment Status: Paid",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Payment Method",
+        "value": "",
+        "verified": true,
+        "evidence": "Payment Method: Bank Transfer",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Due Date",
+        "value": "",
+        "verified": true,
+        "evidence": "Due Date: 07 July 2026",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Notes",
+        "value": "",
+        "verified": true,
+        "evidence": "Notes: Thank you for your business. This invoice confirms payment has been received in full.",
+        "reason": "Exact match."
+    }
+]

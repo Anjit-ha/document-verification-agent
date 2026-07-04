@@ -1,51 +1,49 @@
-import json
+try:
+    from rust_utils import jaccard_similarity
+    RUST_ENABLED = True
+except ImportError:
+    RUST_ENABLED = False
 
-from agents.base_agent import BaseAgent
 
+class ConfidenceAgent:
 
-class ConfidenceAgent(BaseAgent):
+    def run(self, verified):
 
-    def __init__(self):
+        confidence = []
 
-        super().__init__("prompts/confidence.txt")
+        for claim in verified:
 
-    def run(self, verified_claims):
+            # If verification failed, confidence is zero
+            if not claim.get("verified", False):
 
-        prompt = f"""
-Verified Claims
+                score = 0.0
 
-{json.dumps(verified_claims, indent=2)}
+            elif RUST_ENABLED:
 
-For every verified claim assign
+                similarity = jaccard_similarity(
+                    str(claim.get("value", "")),
+                    str(claim.get("evidence", ""))
+                )
 
-confidence
+                if similarity >= 0.90:
+                    score = 0.99
+                elif similarity >= 0.75:
+                    score = 0.90
+                elif similarity >= 0.50:
+                    score = 0.75
+                else:
+                    score = 0.50
 
-between
+            else:
 
-0.0
+                # Fallback when Rust isn't available
+                score = 0.90 if claim.get("verified", False) else 0.0
 
-and
+            confidence.append(
+                {
+                    "field": claim["field"],
+                    "confidence": round(score, 2)
+                }
+            )
 
-1.0
-
-based on
-
-• evidence quality
-
-• verification quality
-
-• ambiguity
-
-Return ONLY JSON.
-
-Example
-
-[
-    {{
-        "field":"Invoice Number",
-        "confidence":0.98
-    }}
-]
-"""
-
-        return self.ask(prompt)
+        return confidence

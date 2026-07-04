@@ -1,10 +1,12 @@
 import json
 import os
 
+from agents.planner import PlannerAgent
 from agents.extractor import ExtractorAgent
 from agents.evidence import EvidenceAgent
 from agents.verifier import VerifierAgent
 from agents.confidence import ConfidenceAgent
+from agents.feedback import FeedbackAgent
 from agents.judge import JudgeAgent
 
 from utils.logger import logger
@@ -12,16 +14,24 @@ from utils.logger import logger
 
 class AgentHarness:
 
-    def __init__(self):
+    def __init__(
+        self,
+        max_iterations=3,
+        confidence_threshold=0.90
+    ):
 
+        self.planner = PlannerAgent()
         self.extractor = ExtractorAgent()
         self.evidence = EvidenceAgent()
         self.verifier = VerifierAgent()
         self.confidence = ConfidenceAgent()
+        self.feedback = FeedbackAgent()
         self.judge = JudgeAgent()
 
+        self.max_iterations = max_iterations
+        self.confidence_threshold = confidence_threshold
+
     def save_json(self, filename, data):
-        """Save JSON output from each agent."""
 
         os.makedirs("output", exist_ok=True)
 
@@ -38,91 +48,234 @@ class AgentHarness:
                 ensure_ascii=False
             )
 
-    def run(self, document_text):
-        print("Running NEW orchestrator...")
+    def merge_claims(self, existing_claims, new_claims):
+
+        merged = {}
+
+        for claim in existing_claims:
+            merged[claim["field"]] = claim
+
+        for claim in new_claims:
+            merged[claim["field"]] = claim
+
+        return list(merged.values())
+
+    def run(self, document):
 
         logger.info("=" * 60)
-        logger.info("Starting Agent Harness")
+        logger.info("Starting Deep Extract Agent Harness")
         logger.info("=" * 60)
 
-        # --------------------------------------------------
-        # Step 1 : Extract Claims
-        # --------------------------------------------------
+        revision_history = []
 
-        logger.info("Running Extractor Agent...")
+        verified_claims = []
 
-        claims = self.extractor.run(document_text)
-
-        self.save_json("extracted_claims.json", claims)
-
-        logger.info(f"Extracted {len(claims)} claims.")
+        failed = []
 
         # --------------------------------------------------
-        # Step 2 : Retrieve Evidence
+        # STEP 1 : Planner
         # --------------------------------------------------
 
-        logger.info("Running Evidence Agent...")
+        logger.info("Generating extraction plan...")
 
-        evidence = self.evidence.run(document_text, claims)
+        extraction_plan = self.planner.run(document)
 
-        self.save_json("evidence.json", evidence)
-
-        logger.info("Evidence collected.")
-
-        # --------------------------------------------------
-        # Step 3 : Verify Claims
-        # --------------------------------------------------
-
-        logger.info("Running Verification Agent...")
-
-        verified = self.verifier.run(document_text, evidence)
-
-        self.save_json("verified_claims.json", verified)
-
-        logger.info("Verification completed.")
+        self.save_json(
+            "plan.json",
+            extraction_plan
+        )
 
         # --------------------------------------------------
-        # Step 4 : Confidence Scoring
+        # STEP 2 : Initial Extraction
         # --------------------------------------------------
 
-        logger.info("Running Confidence Agent...")
+        logger.info("Running initial extraction...")
 
-        confidence = self.confidence.run(verified)
+        claims = self.extractor.run(
+            document,
+            extraction_plan
+        )
 
-        self.save_json("confidence_scores.json", confidence)
-
-        logger.info("Confidence scores generated.")
+        self.save_json(
+            "iteration_1_claims.json",
+            claims
+        )
 
         # --------------------------------------------------
-        # Merge Confidence Scores
+        # STEP 3 : Iterative Verification
         # --------------------------------------------------
 
-        confidence_lookup = {
-            item["field"]: item["confidence"]
-            for item in confidence
-        }
+        for iteration in range(self.max_iterations):
 
-        for claim in verified:
+            logger.info(f"Iteration {iteration + 1}")
 
-            claim["confidence"] = confidence_lookup.get(
-                claim["field"],
-                0.0
+            # --------------------------------------------
+            # Evidence
+            # --------------------------------------------
+
+            evidence = self.evidence.run(
+                document,
+                claims
+            )
+
+            self.save_json(
+                f"iteration_{iteration+1}_evidence.json",
+                evidence
+            )
+
+            # --------------------------------------------
+            # Verification
+            # --------------------------------------------
+
+            verified = self.verifier.run(
+                document,
+                evidence
+            )
+
+            self.save_json(
+                f"iteration_{iteration+1}_verified.json",
+                verified
+            )
+
+            # --------------------------------------------
+            # Confidence
+            # --------------------------------------------
+
+            confidence = self.confidence.run(
+                verified
+            )
+
+            self.save_json(
+                f"iteration_{iteration+1}_confidence.json",
+                confidence
+            )
+
+            confidence_lookup = {
+
+                item["field"]: item["confidence"]
+
+                for item in confidence
+
+            }
+
+            for claim in verified:
+
+                claim["confidence"] = confidence_lookup.get(
+                    claim["field"],
+                    0.0
+                )
+
+            # --------------------------------------------
+            # Passed / Failed
+            # --------------------------------------------
+
+            passed = []
+
+            failed = []
+
+            for claim in verified:
+
+                if (
+                    claim.get("verified", False)
+                    and
+                    claim.get("confidence", 0.0)
+                    >= self.confidence_threshold
+                ):
+
+                    passed.append(claim)
+
+                else:
+
+                    failed.append(claim)
+
+            verified_claims = self.merge_claims(
+                verified_claims,
+                passed
+            )
+
+            revision_history.append(
+                {
+                    "iteration": iteration + 1,
+                    "verified": len(passed),
+                    "failed": len(failed),
+                    "status": (
+                        "SUCCESS"
+                        if len(failed) == 0
+                        else "REFINEMENT_REQUIRED"
+                    )
+                }
+            )
+
+            # --------------------------------------------
+            # Stop if everything passed
+            # --------------------------------------------
+
+            if len(failed) == 0:
+
+                logger.info("All claims verified successfully.")
+
+                break
+
+            # --------------------------------------------
+            # Feedback
+            # --------------------------------------------
+
+            logger.info(
+                f"{len(failed)} claims require refinement."
+            )
+
+            refinement = self.feedback.run(
+                failed
+            )
+
+            self.save_json(
+                f"iteration_{iteration+1}_feedback.json",
+                refinement
+            )
+
+            # --------------------------------------------
+            # Re-Extraction
+            # --------------------------------------------
+
+            claims = self.extractor.run(
+                document,
+                extraction_plan,
+                refinement
+            )
+
+            self.save_json(
+                f"iteration_{iteration+2}_claims.json",
+                claims
             )
 
         # --------------------------------------------------
-        # Step 5 : Judge
+        # Final Merge
         # --------------------------------------------------
 
-        logger.info("Running Judge Agent...")
+        final_claims = self.merge_claims(
+            verified_claims,
+            failed
+        )
 
-        report = self.judge.run(verified)
+        # --------------------------------------------------
+        # Judge
+        # --------------------------------------------------
 
-        report["claims"] = verified
+        report = self.judge.run(
+            final_claims
+        )
 
-        self.save_json("report.json", report)
+        report["claims"] = final_claims
 
-        logger.info("Final report saved.")
+        report["iterations"] = revision_history
 
-        logger.info("Pipeline completed successfully.")
+        self.save_json(
+            "report.json",
+            report
+        )
+
+        logger.info("=" * 60)
+        logger.info("Pipeline Completed Successfully")
+        logger.info("=" * 60)
 
         return report

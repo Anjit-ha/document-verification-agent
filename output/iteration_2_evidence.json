@@ -1,0 +1,70 @@
+[
+    {
+        "field": "Invoice Number",
+        "evidence": "Invoice Number: INV-2026-001"
+    },
+    {
+        "field": "Date",
+        "evidence": "Date: 30 June 2026"
+    },
+    {
+        "field": "Customer",
+        "evidence": "Customer: John Doe"
+    },
+    {
+        "field": "Company",
+        "evidence": "Company: ABC Technologies Pvt Ltd"
+    },
+    {
+        "field": "Email",
+        "evidence": "Email: john.doe@example.com"
+    },
+    {
+        "field": "Phone",
+        "evidence": "Phone: +91 9876543210"
+    },
+    {
+        "field": "Subtotal",
+        "evidence": "Subtotal: $1,250.00"
+    },
+    {
+        "field": "Tax",
+        "evidence": "Tax (10%): $125.00"
+    },
+    {
+        "field": "Total Amount",
+        "evidence": "Total Amount: $1,375.00"
+    },
+    {
+        "field": "Item 1 Description",
+        "evidence": "1. AI Consulting Services - $850.00"
+    },
+    {
+        "field": "Item 1 Amount",
+        "evidence": "1. AI Consulting Services - $850.00"
+    },
+    {
+        "field": "Item 2 Description",
+        "evidence": "2. Document Processing License - $400.00"
+    },
+    {
+        "field": "Item 2 Amount",
+        "evidence": "2. Document Processing License - $400.00"
+    },
+    {
+        "field": "Payment Status",
+        "evidence": "Payment Status: Paid"
+    },
+    {
+        "field": "Payment Method",
+        "evidence": "Payment Method: Bank Transfer"
+    },
+    {
+        "field": "Due Date",
+        "evidence": "Due Date: 07 July 2026"
+    },
+    {
+        "field": "Notes",
+        "evidence": "Notes: Thank you for your business. This invoice confirms payment has been received in full."
+    }
+]

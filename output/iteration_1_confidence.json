@@ -1,0 +1,70 @@
+[
+    {
+        "field": "Invoice Number",
+        "confidence": 0.5
+    },
+    {
+        "field": "Date",
+        "confidence": 0.5
+    },
+    {
+        "field": "Customer",
+        "confidence": 0.5
+    },
+    {
+        "field": "Company",
+        "confidence": 0.5
+    },
+    {
+        "field": "Email",
+        "confidence": 0.5
+    },
+    {
+        "field": "Phone",
+        "confidence": 0.5
+    },
+    {
+        "field": "Subtotal",
+        "confidence": 0.5
+    },
+    {
+        "field": "Tax",
+        "confidence": 0.5
+    },
+    {
+        "field": "Total Amount",
+        "confidence": 0.5
+    },
+    {
+        "field": "Description",
+        "confidence": 0.5
+    },
+    {
+        "field": "Amount",
+        "confidence": 0.5
+    },
+    {
+        "field": "Description",
+        "confidence": 0.5
+    },
+    {
+        "field": "Amount",
+        "confidence": 0.5
+    },
+    {
+        "field": "Payment Status",
+        "confidence": 0.5
+    },
+    {
+        "field": "Payment Method",
+        "confidence": 0.5
+    },
+    {
+        "field": "Due Date",
+        "confidence": 0.5
+    },
+    {
+        "field": "Notes",
+        "confidence": 0.5
+    }
+]

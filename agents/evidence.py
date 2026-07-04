@@ -9,35 +9,24 @@ class EvidenceAgent(BaseAgent):
 
         super().__init__("prompts/evidence.txt")
 
-    def run(self, document: str, claims: list):
+    def run(self, document, claims):
 
         prompt = f"""
 DOCUMENT
 
 {document}
 
-CLAIMS
+==========================
 
-{json.dumps(claims, indent=2)}
+EXTRACTED CLAIMS
 
-Task:
+{json.dumps(claims, indent=2, ensure_ascii=False)}
 
-For every claim, find the exact supporting sentence or paragraph
-from the document.
+==========================
 
-If no evidence exists, return an empty string.
+Retrieve supporting evidence for every claim.
 
-Return ONLY valid JSON.
-
-Example
-
-[
-  {{
-      "field":"Invoice Number",
-      "value":"INV001",
-      "evidence":"Invoice Number : INV001"
-  }}
-]
+Return JSON only.
 """
 
         return self.ask(prompt)
