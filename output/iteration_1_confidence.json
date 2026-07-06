@@ -1,70 +1,226 @@
 [
     {
-        "field": "Invoice Number",
-        "confidence": 0.5
+        "field": "Company Name",
+        "confidence": 0.99
     },
     {
-        "field": "Date",
-        "confidence": 0.5
+        "field": "Company Address",
+        "confidence": 0.99
     },
     {
-        "field": "Customer",
-        "confidence": 0.5
+        "field": "Company Phone",
+        "confidence": 0.99
     },
     {
-        "field": "Company",
-        "confidence": 0.5
+        "field": "Company Email",
+        "confidence": 0.99
     },
     {
-        "field": "Email",
-        "confidence": 0.5
+        "field": "Invoice No",
+        "confidence": 0.99
     },
     {
-        "field": "Phone",
-        "confidence": 0.5
-    },
-    {
-        "field": "Subtotal",
-        "confidence": 0.5
-    },
-    {
-        "field": "Tax",
-        "confidence": 0.5
-    },
-    {
-        "field": "Total Amount",
-        "confidence": 0.5
-    },
-    {
-        "field": "Description",
-        "confidence": 0.5
-    },
-    {
-        "field": "Amount",
-        "confidence": 0.5
-    },
-    {
-        "field": "Description",
-        "confidence": 0.5
-    },
-    {
-        "field": "Amount",
-        "confidence": 0.5
-    },
-    {
-        "field": "Payment Status",
-        "confidence": 0.5
-    },
-    {
-        "field": "Payment Method",
-        "confidence": 0.5
+        "field": "Invoice Date",
+        "confidence": 0.99
     },
     {
         "field": "Due Date",
         "confidence": 0.5
     },
     {
-        "field": "Notes",
+        "field": "Customer ID",
         "confidence": 0.5
+    },
+    {
+        "field": "Customer Name",
+        "confidence": 0.99
+    },
+    {
+        "field": "Customer Address",
+        "confidence": 0.99
+    },
+    {
+        "field": "Customer Email",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 1 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 1 Quantity",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 1 Unit Price",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 1 Total",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 2 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 2 Quantity",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 2 Unit Price",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 2 Total",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 3 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 3 Quantity",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 3 Unit Price",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 3 Total",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 4 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 4 Quantity",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 4 Unit Price",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 4 Total",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 5 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 5 Quantity",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 5 Unit Price",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 5 Total",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 6 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 6 Quantity",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 6 Unit Price",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 6 Total",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 7 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 7 Quantity",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 7 Unit Price",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 7 Total",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 8 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 8 Quantity",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 8 Unit Price",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 8 Total",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 9 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 9 Quantity",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 9 Unit Price",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 9 Total",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 10 Description",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 10 Quantity",
+        "confidence": 0.99
+    },
+    {
+        "field": "Line Item 10 Unit Price",
+        "confidence": 0.5
+    },
+    {
+        "field": "Line Item 10 Total",
+        "confidence": 0.5
+    },
+    {
+        "field": "Subtotal",
+        "confidence": 0.99
+    },
+    {
+        "field": "Sales Tax",
+        "confidence": 0.5
+    },
+    {
+        "field": "Shipping",
+        "confidence": 0.99
+    },
+    {
+        "field": "Total Due",
+        "confidence": 0.5
+    },
+    {
+        "field": "Note 1",
+        "confidence": 0.99
     }
 ]

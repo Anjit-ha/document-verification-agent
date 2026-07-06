@@ -1,70 +1,226 @@
 [
     {
-        "field": "Invoice Number",
-        "evidence": "Invoice Number: INV-2026-001"
+        "field": "Company Name",
+        "evidence": "PeakStone Industries LLC"
     },
     {
-        "field": "Date",
-        "evidence": "Date: 30 June 2026"
+        "field": "Company Address",
+        "evidence": "415 Granite Way\nDenver, CO 80202"
     },
     {
-        "field": "Customer",
-        "evidence": "Customer: John Doe"
+        "field": "Company Phone",
+        "evidence": "Phone: +1 (720) 555-0147"
     },
     {
-        "field": "Company",
-        "evidence": "Company: ABC Technologies Pvt Ltd"
+        "field": "Company Email",
+        "evidence": "Email: accounts@peakstoneind.com"
     },
     {
-        "field": "Email",
-        "evidence": "Email: john.doe@example.com"
+        "field": "Invoice No",
+        "evidence": "Invoice No: PSI-24-0672"
     },
     {
-        "field": "Phone",
-        "evidence": "Phone: +91 9876543210"
-    },
-    {
-        "field": "Subtotal",
-        "evidence": "Subtotal: $1,250.00"
-    },
-    {
-        "field": "Tax",
-        "evidence": "Tax (10%): $125.00"
-    },
-    {
-        "field": "Total Amount",
-        "evidence": "Total Amount: $1,375.00"
-    },
-    {
-        "field": "Description",
-        "evidence": "1. AI Consulting Services - $850.00"
-    },
-    {
-        "field": "Amount",
-        "evidence": "1. AI Consulting Services - $850.00"
-    },
-    {
-        "field": "Description",
-        "evidence": "2. Document Processing License - $400.00"
-    },
-    {
-        "field": "Amount",
-        "evidence": "2. Document Processing License - $400.00"
-    },
-    {
-        "field": "Payment Status",
-        "evidence": "Payment Status: Paid"
-    },
-    {
-        "field": "Payment Method",
-        "evidence": "Payment Method: Bank Transfer"
+        "field": "Invoice Date",
+        "evidence": "Invoice Date: 03/28/2024"
     },
     {
         "field": "Due Date",
-        "evidence": "Due Date: 07 July 2026"
+        "evidence": ""
     },
     {
-        "field": "Notes",
-        "evidence": "Notes: Thank you for your business. This invoice confirms payment has been received in full."
+        "field": "Customer ID",
+        "evidence": ""
+    },
+    {
+        "field": "Customer Name",
+        "evidence": "BuildRight Contractors"
+    },
+    {
+        "field": "Customer Address",
+        "evidence": "742 Builder Lane\nHouston, TX 77001"
+    },
+    {
+        "field": "Customer Email",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 1 Description",
+        "evidence": "Portland Cement"
+    },
+    {
+        "field": "Line Item 1 Quantity",
+        "evidence": "50"
+    },
+    {
+        "field": "Line Item 1 Unit Price",
+        "evidence": "11.50"
+    },
+    {
+        "field": "Line Item 1 Total",
+        "evidence": "575.00"
+    },
+    {
+        "field": "Line Item 2 Description",
+        "evidence": "Rebar #4"
+    },
+    {
+        "field": "Line Item 2 Quantity",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 2 Unit Price",
+        "evidence": "17.80"
+    },
+    {
+        "field": "Line Item 2 Total",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 3 Description",
+        "evidence": "Coarse Aggregate"
+    },
+    {
+        "field": "Line Item 3 Quantity",
+        "evidence": "15"
+    },
+    {
+        "field": "Line Item 3 Unit Price",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 3 Total",
+        "evidence": "337.50"
+    },
+    {
+        "field": "Line Item 4 Description",
+        "evidence": "Fine Aggregate"
+    },
+    {
+        "field": "Line Item 4 Quantity",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 4 Unit Price",
+        "evidence": "28.00"
+    },
+    {
+        "field": "Line Item 4 Total",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 5 Description",
+        "evidence": "Concrete Mix"
+    },
+    {
+        "field": "Line Item 5 Quantity",
+        "evidence": "10"
+    },
+    {
+        "field": "Line Item 5 Unit Price",
+        "evidence": "125.00"
+    },
+    {
+        "field": "Line Item 5 Total",
+        "evidence": "1250.00"
+    },
+    {
+        "field": "Line Item 6 Description",
+        "evidence": "Steel Wire"
+    },
+    {
+        "field": "Line Item 6 Quantity",
+        "evidence": "5"
+    },
+    {
+        "field": "Line Item 6 Unit Price",
+        "evidence": "24.00"
+    },
+    {
+        "field": "Line Item 6 Total",
+        "evidence": "120.00"
+    },
+    {
+        "field": "Line Item 7 Description",
+        "evidence": "Plywood Sheets"
+    },
+    {
+        "field": "Line Item 7 Quantity",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 7 Unit Price",
+        "evidence": "42.00"
+    },
+    {
+        "field": "Line Item 7 Total",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 8 Description",
+        "evidence": "Safety Helmets"
+    },
+    {
+        "field": "Line Item 8 Quantity",
+        "evidence": "12"
+    },
+    {
+        "field": "Line Item 8 Unit Price",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 8 Total",
+        "evidence": "240.00"
+    },
+    {
+        "field": "Line Item 9 Description",
+        "evidence": "Work Gloves"
+    },
+    {
+        "field": "Line Item 9 Quantity",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 9 Unit Price",
+        "evidence": "6.20"
+    },
+    {
+        "field": "Line Item 9 Total",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 10 Description",
+        "evidence": "Delivery Charges"
+    },
+    {
+        "field": "Line Item 10 Quantity",
+        "evidence": "1"
+    },
+    {
+        "field": "Line Item 10 Unit Price",
+        "evidence": ""
+    },
+    {
+        "field": "Line Item 10 Total",
+        "evidence": ""
+    },
+    {
+        "field": "Subtotal",
+        "evidence": "Subtotal: 2522.50"
+    },
+    {
+        "field": "Sales Tax",
+        "evidence": ""
+    },
+    {
+        "field": "Shipping",
+        "evidence": "Shipping: 150.00"
+    },
+    {
+        "field": "Total Due",
+        "evidence": ""
+    },
+    {
+        "field": "Note 1",
+        "evidence": "Handwritten note: Please confirm quantities before dispatch."
     }
 ]

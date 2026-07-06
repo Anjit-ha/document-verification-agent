@@ -1,122 +1,50 @@
 [
     {
         "section": "",
-        "field": "Invoice Number",
-        "value": "",
+        "field": "Company Name",
+        "value": "PeakStone Industries LLC",
         "verified": true,
-        "evidence": "Invoice Number: INV-2026-001",
+        "evidence": "PeakStone Industries LLC",
         "reason": "Exact match."
     },
     {
         "section": "",
-        "field": "Date",
-        "value": "",
+        "field": "Company Address",
+        "value": "415 Granite Way\nDenver, CO 80202",
         "verified": true,
-        "evidence": "Date: 30 June 2026",
+        "evidence": "415 Granite Way\nDenver, CO 80202",
         "reason": "Exact match."
     },
     {
         "section": "",
-        "field": "Customer",
-        "value": "",
+        "field": "Company Phone",
+        "value": "Phone: +1 (720) 555-0147",
         "verified": true,
-        "evidence": "Customer: John Doe",
+        "evidence": "Phone: +1 (720) 555-0147",
         "reason": "Exact match."
     },
     {
         "section": "",
-        "field": "Company",
-        "value": "",
+        "field": "Company Email",
+        "value": "Email: accounts@peakstoneind.com",
         "verified": true,
-        "evidence": "Company: ABC Technologies Pvt Ltd",
+        "evidence": "Email: accounts@peakstoneind.com",
         "reason": "Exact match."
     },
     {
         "section": "",
-        "field": "Email",
-        "value": "",
+        "field": "Invoice No",
+        "value": "Invoice No: PSI-24-0672",
         "verified": true,
-        "evidence": "Email: john.doe@example.com",
+        "evidence": "Invoice No: PSI-24-0672",
         "reason": "Exact match."
     },
     {
         "section": "",
-        "field": "Phone",
-        "value": "",
+        "field": "Invoice Date",
+        "value": "Invoice Date: 03/28/2024",
         "verified": true,
-        "evidence": "Phone: +91 9876543210",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Subtotal",
-        "value": "",
-        "verified": true,
-        "evidence": "Subtotal: $1,250.00",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Tax",
-        "value": "",
-        "verified": true,
-        "evidence": "Tax (10%): $125.00",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Total Amount",
-        "value": "",
-        "verified": true,
-        "evidence": "Total Amount: $1,375.00",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Description",
-        "value": "",
-        "verified": true,
-        "evidence": "1. AI Consulting Services - $850.00",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Amount",
-        "value": "",
-        "verified": true,
-        "evidence": "1. AI Consulting Services - $850.00",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Description",
-        "value": "",
-        "verified": true,
-        "evidence": "2. Document Processing License - $400.00",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Amount",
-        "value": "",
-        "verified": true,
-        "evidence": "2. Document Processing License - $400.00",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Payment Status",
-        "value": "",
-        "verified": true,
-        "evidence": "Payment Status: Paid",
-        "reason": "Exact match."
-    },
-    {
-        "section": "",
-        "field": "Payment Method",
-        "value": "",
-        "verified": true,
-        "evidence": "Payment Method: Bank Transfer",
+        "evidence": "Invoice Date: 03/28/2024",
         "reason": "Exact match."
     },
     {
@@ -124,15 +52,399 @@
         "field": "Due Date",
         "value": "",
         "verified": true,
-        "evidence": "Due Date: 07 July 2026",
+        "evidence": "— (Missing)",
+        "reason": "Missing evidence in document, correctly extracted as missing."
+    },
+    {
+        "section": "",
+        "field": "Customer ID",
+        "value": "",
+        "verified": true,
+        "evidence": "____________",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "",
+        "field": "Customer Name",
+        "value": "BuildRight Contractors",
+        "verified": true,
+        "evidence": "BuildRight Contractors",
         "reason": "Exact match."
     },
     {
         "section": "",
-        "field": "Notes",
+        "field": "Customer Address",
+        "value": "742 Builder Lane\nHouston, TX 77001",
+        "verified": true,
+        "evidence": "742 Builder Lane\nHouston, TX 77001",
+        "reason": "Exact match."
+    },
+    {
+        "section": "",
+        "field": "Customer Email",
         "value": "",
         "verified": true,
-        "evidence": "Notes: Thank you for your business. This invoice confirms payment has been received in full.",
+        "evidence": "____________",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 1 Description",
+        "value": "Portland Cement",
+        "verified": true,
+        "evidence": "Portland Cement",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 1 Quantity",
+        "value": "50",
+        "verified": true,
+        "evidence": "50",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 1 Unit Price",
+        "value": "11.50",
+        "verified": true,
+        "evidence": "11.50",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 1 Total",
+        "value": "575.00",
+        "verified": true,
+        "evidence": "575.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 2 Description",
+        "value": "Rebar #4",
+        "verified": true,
+        "evidence": "Rebar #4",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 2 Quantity",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 2 Unit Price",
+        "value": "17.80",
+        "verified": true,
+        "evidence": "17.80",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 2 Total",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 3 Description",
+        "value": "Coarse Aggregate",
+        "verified": true,
+        "evidence": "Coarse Aggregate",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 3 Quantity",
+        "value": "15",
+        "verified": true,
+        "evidence": "15",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 3 Unit Price",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 3 Total",
+        "value": "337.50",
+        "verified": true,
+        "evidence": "337.50",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 4 Description",
+        "value": "Fine Aggregate",
+        "verified": true,
+        "evidence": "Fine Aggregate",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 4 Quantity",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 4 Unit Price",
+        "value": "28.00",
+        "verified": true,
+        "evidence": "28.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 4 Total",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 5 Description",
+        "value": "Concrete Mix",
+        "verified": true,
+        "evidence": "Concrete Mix",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 5 Quantity",
+        "value": "10",
+        "verified": true,
+        "evidence": "10",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 5 Unit Price",
+        "value": "125.00",
+        "verified": true,
+        "evidence": "125.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 5 Total",
+        "value": "1250.00",
+        "verified": true,
+        "evidence": "1250.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 6 Description",
+        "value": "Steel Wire",
+        "verified": true,
+        "evidence": "Steel Wire",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 6 Quantity",
+        "value": "5",
+        "verified": true,
+        "evidence": "5",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 6 Unit Price",
+        "value": "24.00",
+        "verified": true,
+        "evidence": "24.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 6 Total",
+        "value": "120.00",
+        "verified": true,
+        "evidence": "120.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 7 Description",
+        "value": "Plywood Sheets",
+        "verified": true,
+        "evidence": "Plywood Sheets",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 7 Quantity",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 7 Unit Price",
+        "value": "42.00",
+        "verified": true,
+        "evidence": "42.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 7 Total",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 8 Description",
+        "value": "Safety Helmets",
+        "verified": true,
+        "evidence": "Safety Helmets",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 8 Quantity",
+        "value": "12",
+        "verified": true,
+        "evidence": "12",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 8 Unit Price",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 8 Total",
+        "value": "240.00",
+        "verified": true,
+        "evidence": "240.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 9 Description",
+        "value": "Work Gloves",
+        "verified": true,
+        "evidence": "Work Gloves",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 9 Quantity",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 9 Unit Price",
+        "value": "6.20",
+        "verified": true,
+        "evidence": "6.20",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 9 Total",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 10 Description",
+        "value": "Delivery Charges",
+        "verified": true,
+        "evidence": "Delivery Charges",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 10 Quantity",
+        "value": "1",
+        "verified": true,
+        "evidence": "1",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 10 Unit Price",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Line Items",
+        "field": "Line Item 10 Total",
+        "value": "",
+        "verified": true,
+        "evidence": "",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Summary",
+        "field": "Subtotal",
+        "value": "Subtotal: 2522.50",
+        "verified": true,
+        "evidence": "Subtotal: 2522.50",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Summary",
+        "field": "Sales Tax",
+        "value": "",
+        "verified": true,
+        "evidence": "____________",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Summary",
+        "field": "Shipping",
+        "value": "Shipping: 150.00",
+        "verified": true,
+        "evidence": "Shipping: 150.00",
+        "reason": "Exact match."
+    },
+    {
+        "section": "Summary",
+        "field": "Total Due",
+        "value": "",
+        "verified": true,
+        "evidence": "____________",
+        "reason": "Blank field in document, correctly extracted as missing."
+    },
+    {
+        "section": "Notes",
+        "field": "Note 1",
+        "value": "Handwritten note: Please confirm quantities before dispatch.",
+        "verified": true,
+        "evidence": "Handwritten note: Please confirm quantities before dispatch.",
         "reason": "Exact match."
     }
 ]

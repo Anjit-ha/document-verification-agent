@@ -1,87 +1,282 @@
 [
     {
-        "section": "Invoice Details",
-        "field": "Invoice Number",
-        "value": "INV-2026-001"
+        "section": "Invoice Header",
+        "field": "Company Name",
+        "value": "PeakStone Industries LLC"
     },
     {
-        "section": "Invoice Details",
-        "field": "Date",
-        "value": "30 June 2026"
+        "section": "Invoice Header",
+        "field": "Company Address",
+        "value": "415 Granite Way\nDenver, CO 80202"
     },
     {
-        "section": "Customer Information",
-        "field": "Customer",
-        "value": "John Doe"
+        "section": "Invoice Header",
+        "field": "Company Phone",
+        "value": "+1 (720) 555-0147"
     },
     {
-        "section": "Customer Information",
-        "field": "Company",
-        "value": "ABC Technologies Pvt Ltd"
+        "section": "Invoice Header",
+        "field": "Company Email",
+        "value": "accounts@peakstoneind.com"
     },
     {
-        "section": "Customer Information",
-        "field": "Email",
-        "value": "john.doe@example.com"
+        "section": "Invoice Header",
+        "field": "Invoice No",
+        "value": "PSI-24-0672"
     },
     {
-        "section": "Customer Information",
-        "field": "Phone",
-        "value": "+91 9876543210"
+        "section": "Invoice Header",
+        "field": "Invoice Date",
+        "value": "03/28/2024"
     },
     {
-        "section": "Summary Totals",
-        "field": "Subtotal",
-        "value": "$1,250.00"
-    },
-    {
-        "section": "Summary Totals",
-        "field": "Tax",
-        "value": "$125.00"
-    },
-    {
-        "section": "Summary Totals",
-        "field": "Total Amount",
-        "value": "$1,375.00"
-    },
-    {
-        "section": "Items",
-        "field": "Item 1 Description",
-        "value": "AI Consulting Services"
-    },
-    {
-        "section": "Items",
-        "field": "Item 1 Amount",
-        "value": "$850.00"
-    },
-    {
-        "section": "Items",
-        "field": "Item 2 Description",
-        "value": "Document Processing License"
-    },
-    {
-        "section": "Items",
-        "field": "Item 2 Amount",
-        "value": "$400.00"
-    },
-    {
-        "section": "Payment and Due Details",
-        "field": "Payment Status",
-        "value": "Paid"
-    },
-    {
-        "section": "Payment and Due Details",
-        "field": "Payment Method",
-        "value": "Bank Transfer"
-    },
-    {
-        "section": "Payment and Due Details",
+        "section": "Invoice Header",
         "field": "Due Date",
-        "value": "07 July 2026"
+        "value": null
     },
     {
-        "section": "Notes",
-        "field": "Notes",
-        "value": "Thank you for your business. This invoice confirms payment has been received in full."
+        "section": "Invoice Header",
+        "field": "Customer ID",
+        "value": null
+    },
+    {
+        "section": "Bill To Information",
+        "field": "Bill To Company Name",
+        "value": "BuildRight Contractors"
+    },
+    {
+        "section": "Bill To Information",
+        "field": "Bill To Address",
+        "value": "742 Builder Lane\nHouston, TX 77001"
+    },
+    {
+        "section": "Bill To Information",
+        "field": "Bill To Email",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 1 Description",
+        "value": "Portland Cement"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 1 Quantity",
+        "value": "50"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 1 Unit Price",
+        "value": "11.50"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 1 Total",
+        "value": "575.00"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 2 Description",
+        "value": "Rebar #4"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 2 Quantity",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 2 Unit Price",
+        "value": "17.80"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 2 Total",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 3 Description",
+        "value": "Coarse Aggregate"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 3 Quantity",
+        "value": "15"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 3 Unit Price",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 3 Total",
+        "value": "337.50"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 4 Description",
+        "value": "Fine Aggregate"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 4 Quantity",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 4 Unit Price",
+        "value": "28.00"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 4 Total",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 5 Description",
+        "value": "Concrete Mix"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 5 Quantity",
+        "value": "10"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 5 Unit Price",
+        "value": "125.00"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 5 Total",
+        "value": "1250.00"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 6 Description",
+        "value": "Steel Wire"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 6 Quantity",
+        "value": "5"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 6 Unit Price",
+        "value": "24.00"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 6 Total",
+        "value": "120.00"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 7 Description",
+        "value": "Plywood Sheets"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 7 Quantity",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 7 Unit Price",
+        "value": "42.00"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 7 Total",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 8 Description",
+        "value": "Safety Helmets"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 8 Quantity",
+        "value": "12"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 8 Unit Price",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 8 Total",
+        "value": "240.00"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 9 Description",
+        "value": "Work Gloves"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 9 Quantity",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 9 Unit Price",
+        "value": "6.20"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 9 Total",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 10 Description",
+        "value": "Delivery Charges"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 10 Quantity",
+        "value": "1"
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 10 Unit Price",
+        "value": null
+    },
+    {
+        "section": "Line Items",
+        "field": "Item 10 Total",
+        "value": null
+    },
+    {
+        "section": "Invoice Summary",
+        "field": "Subtotal",
+        "value": "2522.50"
+    },
+    {
+        "section": "Invoice Summary",
+        "field": "Sales Tax",
+        "value": null
+    },
+    {
+        "section": "Invoice Summary",
+        "field": "Shipping",
+        "value": "150.00"
+    },
+    {
+        "section": "Invoice Summary",
+        "field": "Total Due",
+        "value": null
+    },
+    {
+        "section": "Handwritten Notes",
+        "field": "Note",
+        "value": "Please confirm quantities before dispatch."
     }
 ]

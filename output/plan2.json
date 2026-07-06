@@ -1,0 +1,47 @@
+{
+    "document_type": "Invoice",
+    "sections": [
+        {
+            "id": 1,
+            "name": "Invoice Header",
+            "description": "Contains the invoice number and issue date.",
+            "priority": 1
+        },
+        {
+            "id": 2,
+            "name": "Seller Information",
+            "description": "Details of the company issuing the invoice, including name, address, phone, and email.",
+            "priority": 2
+        },
+        {
+            "id": 3,
+            "name": "Billing Information",
+            "description": "Details of the entity being billed, including name, address, phone, and customer ID.",
+            "priority": 3
+        },
+        {
+            "id": 4,
+            "name": "Shipping Information",
+            "description": "Details of the entity to whom goods/services were shipped, including name, address, phone, and customer ID.",
+            "priority": 4
+        },
+        {
+            "id": 5,
+            "name": "Order Details",
+            "description": "Key dates and identifiers related to the order, including order date, order number, and due date.",
+            "priority": 5
+        },
+        {
+            "id": 6,
+            "name": "Line Items",
+            "description": "A repeated structure detailing each item or service, including item number, description, quantity (implied in service name), item price, and total for each line.",
+            "priority": 6
+        },
+        {
+            "id": 7,
+            "name": "Invoice Footer",
+            "description": "General notes and messages at the end of the invoice, such as contact information for customer service and a thank you message.",
+            "priority": 7
+        }
+    ]
+}

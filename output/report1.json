@@ -1,0 +1,195 @@
+{
+    "overall_status": "PASSED",
+    "summary": "All extracted claims were successfully verified.",
+    "verified_count": 19,
+    "failed_count": 0,
+    "quality_score": 1.0,
+    "recommendation": "No further refinement required.",
+    "claims": [
+        {
+            "section": "",
+            "field": "Invoice Date",
+            "value": "16.12.2021",
+            "verified": true,
+            "evidence": "16.12.2021",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Invoice No.",
+            "value": "Invoice No. 1213",
+            "verified": true,
+            "evidence": "Invoice No. 1213",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Company Name",
+            "value": "La Galerie",
+            "verified": true,
+            "evidence": "La Galerie",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Tel",
+            "value": "Tel + 49 228 698629",
+            "verified": true,
+            "evidence": "Tel + 49 228 698629",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Fax",
+            "value": "Fax + 49 228 698629",
+            "verified": true,
+            "evidence": "Fax + 49 228 698629",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Address",
+            "value": "4 Rue Courtois\nLille, Nord, 59000",
+            "verified": true,
+            "evidence": "4 Rue Courtois\nLille, Nord, 59000",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Website",
+            "value": "zencorporations.de",
+            "verified": true,
+            "evidence": "zencorporations.de",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Email",
+            "value": "contact@zencorporations.de",
+            "verified": true,
+            "evidence": "contact@zencorporations.de",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Product",
+            "value": "Indian Tobacco",
+            "verified": true,
+            "evidence": "Indian Tobacco",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "items",
+            "field": "Qty.",
+            "value": "Qty. 2",
+            "verified": true,
+            "evidence": "Qty. 2",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "items",
+            "field": "Unit Price [EUR]",
+            "value": "7.25",
+            "verified": true,
+            "evidence": "7.25",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "items",
+            "field": "Total [EUR]",
+            "value": "14.50",
+            "verified": true,
+            "evidence": "14.50",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "summary",
+            "field": "Subtotal",
+            "value": "Subtotal\n2553.91",
+            "verified": true,
+            "evidence": "Subtotal\n2553.91",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "summary",
+            "field": "Sales Tax",
+            "value": "Sales Tax\n255.39",
+            "verified": true,
+            "evidence": "Sales Tax\n255.39",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "summary",
+            "field": "Total Due",
+            "value": "Total Due\n2809.30",
+            "verified": true,
+            "evidence": "Total Due\n2809.30",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Ship To",
+            "value": "Ship To\nSame as recipient",
+            "verified": true,
+            "evidence": "Ship To\nSame as recipient",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Terms",
+            "value": "Due 30 days after receipt",
+            "verified": true,
+            "evidence": "Due 30 days after receipt",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Instructions",
+            "value": "Instructions\nNone",
+            "verified": true,
+            "evidence": "Instructions\nNone",
+            "reason": "Exact match",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "Message",
+            "value": "Thank you for your business!",
+            "verified": true,
+            "evidence": "Thank you for your business!",
+            "reason": "Exact match",
+            "confidence": 0.99
+        }
+    ],
+    "iterations": [
+        {
+            "iteration": 1,
+            "verified": 56,
+            "failed": 1,
+            "status": "REFINEMENT_REQUIRED"
+        },
+        {
+            "iteration": 2,
+            "verified": 10,
+            "failed": 0,
+            "status": "SUCCESS"
+        }
+    ]
+}

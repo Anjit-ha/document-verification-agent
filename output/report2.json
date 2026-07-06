@@ -1,0 +1,261 @@
+{
+    "overall_status": "PASSED",
+    "summary": "All extracted claims were successfully verified.",
+    "verified_count": 27,
+    "failed_count": 0,
+    "quality_score": 1.0,
+    "recommendation": "No further refinement required.",
+    "claims": [
+        {
+            "section": "",
+            "field": "document_type",
+            "value": "INVOICE 0012820",
+            "verified": true,
+            "evidence": "INVOICE 0012820",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "invoice_number",
+            "value": "0012820",
+            "verified": true,
+            "evidence": "0012820",
+            "reason": "Exact match between extracted evidence and original document (from 'INVOICE 0012820').",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "date",
+            "value": "Date: 27.08.2019",
+            "verified": true,
+            "evidence": "Date: 27.08.2019",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "seller_name",
+            "value": "ConIncorporated",
+            "verified": true,
+            "evidence": "ConIncorporated",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "seller_address",
+            "value": "305 Fleet Rd\nFleet, Hampshire County,\nGU51 3BU",
+            "verified": true,
+            "evidence": "305 Fleet Rd\nFleet, Hampshire County,\nGU51 3BU",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "seller_phone",
+            "value": "012 5261 2116",
+            "verified": true,
+            "evidence": "012 5261 2116",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "",
+            "field": "seller_email",
+            "value": "admin@conincorp.co.uk",
+            "verified": true,
+            "evidence": "admin@conincorp.co.uk",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "BILL TO",
+            "field": "billing_name",
+            "value": "Caitlin Roberts",
+            "verified": true,
+            "evidence": "Caitlin Roberts",
+            "reason": "Exact match between extracted evidence and original document under 'BILL TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "BILL TO",
+            "field": "billing_company",
+            "value": "Awthentikz",
+            "verified": true,
+            "evidence": "Awthentikz",
+            "reason": "Exact match between extracted evidence and original document under 'BILL TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "BILL TO",
+            "field": "billing_address",
+            "value": "89 Annfield Rd\nBEARLEY, CV37 7GQ",
+            "verified": true,
+            "evidence": "89 Annfield Rd\nBEARLEY, CV37 7GQ",
+            "reason": "Exact match between extracted evidence and original document under 'BILL TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "BILL TO",
+            "field": "billing_phone",
+            "value": "079 0608 3650",
+            "verified": true,
+            "evidence": "079 0608 3650",
+            "reason": "Exact match between extracted evidence and original document under 'BILL TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "BILL TO",
+            "field": "billing_customer_id",
+            "value": "Customer ID: CN0044",
+            "verified": true,
+            "evidence": "Customer ID: CN0044",
+            "reason": "Exact match between extracted evidence and original document under 'BILL TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "SHIP TO",
+            "field": "shipping_name",
+            "value": "Caitlin Roberts",
+            "verified": true,
+            "evidence": "Caitlin Roberts",
+            "reason": "Exact match between extracted evidence and original document under 'SHIP TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "SHIP TO",
+            "field": "shipping_company",
+            "value": "Awthentikz",
+            "verified": true,
+            "evidence": "Awthentikz",
+            "reason": "Exact match between extracted evidence and original document under 'SHIP TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "SHIP TO",
+            "field": "shipping_address",
+            "value": "89 Annfield Rd\nBEARLEY, CV37 7GQ",
+            "verified": true,
+            "evidence": "89 Annfield Rd\nBEARLEY, CV37 7GQ",
+            "reason": "Exact match between extracted evidence and original document under 'SHIP TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "SHIP TO",
+            "field": "shipping_phone",
+            "value": "079 0608 3650",
+            "verified": true,
+            "evidence": "079 0608 3650",
+            "reason": "Exact match between extracted evidence and original document under 'SHIP TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "SHIP TO",
+            "field": "shipping_customer_id",
+            "value": "Customer ID: CN0044",
+            "verified": true,
+            "evidence": "Customer ID: CN0044",
+            "reason": "Exact match between extracted evidence and original document under 'SHIP TO'.",
+            "confidence": 0.99
+        },
+        {
+            "section": "ORDER DETAILS",
+            "field": "order_date",
+            "value": "27.08.2019",
+            "verified": true,
+            "evidence": "27.08.2019",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "ORDER DETAILS",
+            "field": "order_number",
+            "value": "PO-001522",
+            "verified": true,
+            "evidence": "PO-001522",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "ORDER DETAILS",
+            "field": "due_date",
+            "value": "27.09.2019",
+            "verified": true,
+            "evidence": "27.09.2019",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "Line Items",
+            "field": "item_number",
+            "value": "15",
+            "verified": true,
+            "evidence": "15",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "Line Items",
+            "field": "service_description",
+            "value": "Storage Tanks",
+            "verified": true,
+            "evidence": "Storage Tanks",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "Line Items",
+            "field": "quantity",
+            "value": "(25)",
+            "verified": true,
+            "evidence": "(25)",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "Line Items",
+            "field": "item_price",
+            "value": "99.25",
+            "verified": true,
+            "evidence": "99.25",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "Line Items",
+            "field": "total_price",
+            "value": "2481.25",
+            "verified": true,
+            "evidence": "2481.25",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "FOOTER",
+            "field": "customer_service_contact_message",
+            "value": "Please contact Customer Service at Phone with any questions\nor comments.",
+            "verified": true,
+            "evidence": "Please contact Customer Service at Phone with any questions\nor comments.",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        },
+        {
+            "section": "FOOTER",
+            "field": "thank_you_message",
+            "value": "THANK YOU FOR YOUR BUSINESS!",
+            "verified": true,
+            "evidence": "THANK YOU FOR YOUR BUSINESS!",
+            "reason": "Exact match between extracted evidence and original document.",
+            "confidence": 0.99
+        }
+    ],
+    "iterations": [
+        {
+            "iteration": 1,
+            "verified": 97,
+            "failed": 0,
+            "status": "SUCCESS"
+        }
+    ]
+}

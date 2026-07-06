@@ -1,42 +1,42 @@
 [
     {
         "field": "Product",
-        "evidence": "Glossostigma"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "Bayberry"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "Waxflower"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "Carolina Geranium"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "Smooth Solomon's \nSeal"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "El Yunque Colorado"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "Queen Anne's Lace"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "Alaskan Douglasia"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "Deer Sedge"
+        "confidence": 0.99
     },
     {
         "field": "Product",
-        "evidence": "Indian Tobacco"
+        "confidence": 0.99
     }
 ]

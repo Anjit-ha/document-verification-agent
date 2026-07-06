@@ -1,0 +1,59 @@
+{
+    "document_type": "Invoice",
+    "sections": [
+        {
+            "id": 1,
+            "name": "Invoice Details",
+            "description": "Contains the invoice number and date.",
+            "priority": 1
+        },
+        {
+            "id": 2,
+            "name": "Sender Information",
+            "description": "Details of the company issuing the invoice, including name, address, contact numbers, and email.",
+            "priority": 2
+        },
+        {
+            "id": 3,
+            "name": "Recipient Information",
+            "description": "Details of the entity receiving the invoice, including name and address.",
+            "priority": 3
+        },
+        {
+            "id": 4,
+            "name": "Line Items",
+            "description": "A list of products with their quantity, unit price, and total price.",
+            "priority": 4
+        },
+        {
+            "id": 5,
+            "name": "Summary Totals",
+            "description": "Financial summary including subtotal, sales tax, and total amount due.",
+            "priority": 5
+        },
+        {
+            "id": 6,
+            "name": "Shipping Information",
+            "description": "Details regarding the shipping address for the order.",
+            "priority": 6
+        },
+        {
+            "id": 7,
+            "name": "Payment Terms",
+            "description": "Information about when the payment is due.",
+            "priority": 7
+        },
+        {
+            "id": 8,
+            "name": "Instructions",
+            "description": "Any special instructions related to the invoice or order.",
+            "priority": 8
+        },
+        {
+            "id": 9,
+            "name": "Greeting",
+            "description": "A concluding message from the sender.",
+            "priority": 9
+        }
+    ]
+}
